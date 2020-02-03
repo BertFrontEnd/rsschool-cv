@@ -1,5 +1,5 @@
-**Siarhei Bryleuski**
-**Contact Info:**
+1. **Siarhei Bryleuski**
+2. **Contact Info:**
 
 - Email: Berton@yandex.ru
 - Telegram: [BertCAD](https://t.me/BertCAD)
