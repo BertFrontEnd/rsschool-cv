@@ -17,3 +17,11 @@ Always wondered how the Web works. There is a great desire to master the "magic"
 - Git (basic, in the process of studying);
 - Webpack 4 (basic, in the process of studying);
 - Soft: Visual Studio Code, Figma & Photoshop.
+
+5. **Code examples:**
+
+Examples of my self-education results everybody can see here - [https://github.com/BertFrontEnd](https://github.com/BertFrontEnd)
+
+6. **Experience:**
+
+I took courses UX/UI design at IT School Myfreedom in Minsk. I also take an online course in Adobe After Effects animation and Adobe Illustrator vector graphics. I like working in Figma and Photoshop. I also completed the HTML5/CSS3 preparatory course and JavaScript/React frontend course at Myfreedom IT School. I know what adaptive cross-browser layout, SASS/SCSS preprocessor, WebPack, yarn package managers and GIT
