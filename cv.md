@@ -25,3 +25,11 @@ Examples of my self-education results everybody can see here - [https://github.c
 6. **Experience:**
 
 I took courses UX/UI design at IT School Myfreedom in Minsk. I also take an online course in Adobe After Effects animation and Adobe Illustrator vector graphics. I like working in Figma and Photoshop. I also completed the HTML5/CSS3 preparatory course and JavaScript/React frontend course at Myfreedom IT School. I know what adaptive cross-browser layout, SASS/SCSS preprocessor, WebPack, yarn package managers and GIT
+
+7. **Education:**
+
+2009-2011 - Belarusian National Technical University, Mechanical engineering faculty, The Department of Metal-Cutting Machines and Tool
+
+8. **English:**
+
+A1. But I keep learn English to this day with [Duolingo](https://ru.duolingo.com/learn), [Lingualeo](https://lingualeo.com/ru/dashboard) and [ValnVille ENG](https://www.youtube.com/channel/UC_gnm9DsRFalWy5WZBkYRXg)
