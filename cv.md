@@ -1,6 +1,6 @@
-1. ## Siarhei Bryleuski
-2. ## Contact Info:
+**Siarhei Bryleuski**
+**Contact Info:**
 
-- Email: Berton@yandex.ru(Berton@yandex.ru)
+- Email: Berton@yandex.ru
 - Telegram: [BertCAD](https://t.me/BertCAD)
 - GitHub: [BertFrontEnd](https://github.com/BertFrontEnd)
