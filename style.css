@@ -61,3 +61,110 @@ body {
   text-align: center;
   text-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
+
+ul {
+  line-height: 24px;
+  list-style-type: none;
+}
+
+a {
+  color: #ffffff;
+}
+
+a:hover {
+  color: #a4b0be;
+}
+
+a:active {
+  color: #747d8c;
+}
+
+.main__inner {
+  margin-top: 45px;
+}
+
+.main__inner .main__contact ul {
+  position: relative;
+}
+
+.main__inner .main__contact ul li.email::before {
+  content: '';
+  position: absolute;
+  top: 4px;
+  left: 14px;
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  background: url('assets/email.svg') no-repeat center/contain;
+}
+
+.main__inner .main__contact ul li.telegram::before {
+  content: '';
+  position: absolute;
+  top: 28px;
+  left: 14px;
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  background: url('assets/telegram.svg') no-repeat center/contain;
+}
+
+.main__inner .main__contact ul li.github::before {
+  content: '';
+  position: absolute;
+  top: 50px;
+  left: 14px;
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  background: url('assets/github.svg') no-repeat center/contain;
+}
+
+.main__inner .main__skills ul {
+  padding-left: 15px;
+}
+
+.main__inner .main__skills ul li {
+  padding-left: 34px;
+  background: url('assets/skill.svg') no-repeat left/contain;
+}
+
+.main__inner section {
+  padding: 15px;
+}
+
+.main__inner section details {
+  position: relative;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ffffff;
+}
+
+.main__inner section details[open] summary::after {
+  -webkit-transform: rotateX(180deg);
+  transform: rotateX(180deg);
+}
+
+.main__inner section details summary {
+  padding-left: 10px;
+  font-family: 'Montserrat', 'Tahoma', sans-serif;
+  text-transform: uppercase;
+  outline: none;
+  cursor: pointer;
+}
+
+.main__inner section details summary::-webkit-details-marker {
+  display: none;
+}
+
+.main__inner section details summary:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 10px;
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  background: url('assets/arrow.svg') no-repeat center/contain;
+  -webkit-transition: all linear 0.3s;
+  transition: all linear 0.3s;
+}
