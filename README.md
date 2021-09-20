@@ -1,3 +1,3 @@
-# Task "Markdown &amp; Git"
+# Task "CV"
 
-[https://bertfrontend.github.io/rsschool-cv/cv](https://bertfrontend.github.io/rsschool-cv/cv)
+[My Curriculum Vitae](https://bertfrontend-cv.netlify.app/)

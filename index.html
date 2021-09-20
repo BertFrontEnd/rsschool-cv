@@ -1,233 +1,475 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HTML & CSS</title>
-    <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Lato"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Montserrat"
-      rel="stylesheet"
-    />
+    <link rel="icon" href="./assets/favicon.svg" />
+    <link rel="stylesheet" href="./assets/reset.css" />
+    <link rel="stylesheet" href="./assets/font.css" />
     <link rel="stylesheet" href="style.css" />
+    <title>My Curriculum Vitae</title>
   </head>
 
-  <body>
-    <header class="header" id="top">
-      <div class="container">
-        <div class="header__inner">
-          <div class="header__intro">
-            <h1>BertFrontEnd</h1>
-            <h2>The Rolling Scopes School 2021Q3</h2>
-          </div>
-          <figure class="header__photo">
-            <img
-              src="assets/the-glitch-mob.jpg"
-              alt="photo"
-              width="250"
-              height="250"
-            />
-            <figcaption class="motto">
-              <mark>It's easy if you try. Just do It.</mark>
-            </figcaption>
-          </figure>
+  <body class="wrapper">
+    <svg style="display: none">
+      <symbol id="link" viewBox="0 0 482.136 482.135">
+        <g>
+          <path
+            d="M455.482,198.184L326.829,326.832c-35.535,35.54-93.108,35.54-128.646,0l-42.881-42.886l42.881-42.876l42.884,42.876
+		c11.845,11.822,31.064,11.846,42.886,0l128.644-128.643c11.816-11.831,11.816-31.066,0-42.9l-42.881-42.881
+		c-11.822-11.814-31.064-11.814-42.887,0l-45.928,45.936c-21.292-12.531-45.491-17.905-69.449-16.291l72.501-72.526
+		c35.535-35.521,93.136-35.521,128.644,0l42.886,42.881C491.018,105.045,491.018,162.663,455.482,198.184z M201.206,366.698
+		l-45.903,45.9c-11.845,11.846-31.064,11.817-42.881,0l-42.884-42.881c-11.845-11.821-11.845-31.041,0-42.886l128.646-128.648
+		c11.819-11.814,31.069-11.814,42.884,0l42.886,42.886l42.876-42.886l-42.876-42.881c-35.54-35.521-93.113-35.521-128.65,0
+		L26.655,283.946c-35.538,35.545-35.538,93.146,0,128.652l42.883,42.882c35.51,35.54,93.11,35.54,128.646,0l72.496-72.499
+		C246.724,384.578,222.588,379.197,201.206,366.698z"
+          />
+        </g>
+      </symbol>
+    </svg>
+
+    <section class="contact__info">
+      <div class="info__photo">
+        <img src="./assets/photo.jpg" alt="photo" />
+      </div>
+      <div class="info__connection">
+        <h3>Данные</h3>
+        <ul class="connection">
+          <li class="name">
+            <span>Имя</span><a href="#">Сергей Брилевский</a>
+          </li>
+          <li class="location">
+            <span>Адрес</span
+            ><a href="https://goo.gl/maps/nWtTsVxreu1sG1yh6" target="_blank"
+              >Минск, Беларусь</a
+            >
+          </li>
+          <li class="phone">
+            <span>Телефон</span><a href="tel:+375297889513">+375-29-7889513</a>
+          </li>
+          <li class="mail">
+            <span>Почта</span
+            ><a href="mailto:Berton@yandex.ru" target="_blank"
+              >Berton@yandex.ru</a
+            >
+          </li>
+          <li class="linkedin">
+            <span>LinkedIn</span
+            ><a href="https://www.linkedin.com/in/bertcad/" target="_blank"
+              >BertCAD</a
+            >
+          </li>
+          <li class="telegram">
+            <span>Телеграм</span
+            ><a href="https://t.me/BertCAD" target="_blank">BertCAD</a>
+          </li>
+          <li class="github">
+            <span>GitHub</span
+            ><a href="https://github.com/BertFrontEnd" target="_blank"
+              >BertFrontEnd</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="info__reference">
+        <h3>Проекты</h3>
+        <ul class="reference">
+          <li>
+            <a
+              href="https://bertfrontend.github.io/singolo/index.html"
+              target="_blank"
+            >
+              <svg class="icon-link">
+                <use xlink:href="#link"></use>
+              </svg>
+              Singolo </a
+            ><span>html</span><span>sass</span><span>javascript</span
+            ><span>photoshop</span>
+          </li>
+          <li>
+            <a
+              href="https://bertfrontend-online-zoo.netlify.app/"
+              target="_blank"
+            >
+              <svg class="icon-link">
+                <use xlink:href="#link"></use>
+              </svg>
+              Online Zoo</a
+            ><span>html</span><span>sass</span><span>javascript</span
+            ><span>figma</span>
+          </li>
+          <li>
+            <a
+              href="https://bertfrontend-momentum.netlify.app/"
+              target="_blank"
+            >
+              <svg class="icon-link">
+                <use xlink:href="#link"></use>
+              </svg>
+              Momentum</a
+            ><span>html</span><span>sass</span><span>javascript</span>
+          </li>
+          <li>
+            <a
+              href="https://bertfrontend-photo-filter.netlify.app/"
+              target="_blank"
+            >
+              <svg class="icon-link">
+                <use xlink:href="#link"></use>
+              </svg>
+              Photo Filter</a
+            ><span>html</span><span>sass</span><span>javascript</span>
+          </li>
+          <li>
+            <a
+              href="https://bertfrontend-virtual-piano.netlify.app/"
+              target="_blank"
+            >
+              <svg class="icon-link">
+                <use xlink:href="#link"></use>
+              </svg>
+              Virtual Piano</a
+            ><span>html</span><span>sass</span><span>javascript</span>
+          </li>
+          <li>
+            <a
+              href="https://bertfrontend-js-clock.netlify.app/"
+              target="_blank"
+            >
+              <svg class="icon-link">
+                <use xlink:href="#link"></use>
+              </svg>
+              JS Clock</a
+            ><span>html</span><span>sass</span><span>javascript</span>
+          </li>
+          <li>
+            <a
+              href="https://bertfrontend-calculator.netlify.app/"
+              target="_blank"
+            >
+              <svg class="icon-link">
+                <use xlink:href="#link"></use>
+              </svg>
+              Calculator</a
+            ><span>html</span><span>sass</span><span>javascript</span>
+          </li>
+          <li>
+            <a
+              href="https://bertfrontend-match-match-game.netlify.app/"
+              target="_blank"
+            >
+              <svg class="icon-link">
+                <use xlink:href="#link"></use>
+              </svg>
+              Match-Match Game</a
+            ><span>html</span><span>sass</span><span>javascript</span
+            ><span>figma</span>
+          </li>
+          <li>
+            <a
+              href="https://bertfrontend-virtual-keyboard.netlify.app/"
+              target="_blank"
+            >
+              <svg class="icon-link">
+                <use xlink:href="#link"></use>
+              </svg>
+              Virtual Keyboard</a
+            ><span>html</span><span>sass</span><span>javascript</span>
+          </li>
+          <li>
+            <a
+              href="https://bertfrontend-wildlife.netlify.app/"
+              target="_blank"
+            >
+              <svg class="icon-link">
+                <use xlink:href="#link"></use>
+              </svg>
+              Wild Life</a
+            ><span>html</span><span>sass</span>
+          </li>
+          <li>
+            <a href="https://bertfrontend-webdev.netlify.app/" target="_blank">
+              <svg class="icon-link">
+                <use xlink:href="#link"></use>
+              </svg>
+              Web Dev</a
+            ><span>html</span><span>sass</span><span>figma</span>
+          </li>
+          <li>
+            <a href="https://www.behance.net/berton502b" target="_blank">
+              <svg class="icon-link">
+                <use xlink:href="#link"></use>
+              </svg>
+              Web Design projects</a
+            ><span>adobexd</span><span>behance</span>
+          </li>
+        </ul>
+      </div>
+      <div class="info__self">
+        <h3>О себе</h3>
+        <p>
+          Ответственный, целеустремленный, к решению вопросов подхожу творчески,
+          пользуюсь уважением и авторитетом в коллективе.
+        </p>
+        <p>
+          Залогом успешной, слаженной и продуктивной работы считаю здоровую
+          атмосферу в коллективе.
+        </p>
+        <p>
+          Постоянно стараюсь узнавать что-то новое и приобретать необходимые
+          навыки для профессионального и личностного роста.
+        </p>
+      </div>
+    </section>
+
+    <section class="experience__info">
+      <div class="info__bio">
+        <h1>Сергей Брилевский</h1>
+      </div>
+      <div class="info__education">
+        <h2 class="education__title">Образование</h2>
+        <div class="education__description">
+          <ul>
+            <li class="year">2002-2006</li>
+            <li class="institution">Лидский Технический Колледж</li>
+            <li class="faculty">
+              Измерительные приборы и аппараты, Техник-электромеханик
+            </li>
+          </ul>
+          <ul>
+            <li class="year">2006-2011</li>
+            <li class="institution">
+              Белорусский национальный технический университет
+            </li>
+            <li class="faculty">
+              Машиностроительный факультет, Технологическое оборудование
+              машиностроительного производства, Инженер-конструктор
+            </li>
+          </ul>
         </div>
       </div>
-    </header>
-
-    <main class="main">
-      <div class="container">
-        <div class="main__inner">
-          <section class="main__contact">
-            <details open>
-              <summary>
-                <h3>Contact Info</h3>
-              </summary>
-              <ul>
-                <li class="email">
-                  Email: <a href="mailto:Berton@yandex.ru">Berton@yandex.ru</a>
-                </li>
-                <li class="telegram">
-                  Telegram:
-                  <a href="https://t.me/BertCAD" target="_blank">BertCAD</a>
-                </li>
-                <li class="github">
-                  GitHub:
-                  <a href="https://github.com/BertFrontEnd" target="_blank"
-                    >BertFrontEnd</a
-                  >
-                </li>
+      <div class="info__experience">
+        <h2 class="experience__title">Опыт работы</h2>
+        <div class="experience__description">
+          <ul>
+            <li class="year">2011-2021</li>
+            <li class="place">ОАО «МЗОР», Ведущий инженер-конструктор</li>
+            <li class="position">
+              Область производства уникальных тяжелых многофункциональных
+              станков; Оформление и разработка конструкторской документации
+              деталей станков в CAD-системах; 3D модели, сборочные чертежи,
+              деталировки, спецификации, сопроводительная документация;
+              Техническое сопровождение конструкторских разработок в период их
+              изготовления и установки в узлы.
+            </li>
+          </ul>
+          <ul>
+            <li class="year">2013</li>
+            <li class="place">IT Академия BelHard, JavaScript и HTML5</li>
+            <li class="position">
+              Спецификация, использование audio и video элементов; Валидация
+              HTML5 и общение с сервером; Базовые конструкции языка JavaScript и
+              типизация; Клиентский JavaScript и запросы на сервер.
+            </li>
+          </ul>
+          <ul>
+            <li class="year">2017</li>
+            <li class="place">
+              Школа веб-дизайна HIGHLIGHTS, Веб-дизайн. Основы
+            </li>
+            <li class="position">
+              Создание прототипа, решаемые задачи и его виды; Работа с
+              визуальной составляющей и понятие "мудборда"; Решаемые задачи
+              иконок и сочетание шрифтовых пар; Правильный выбор интерфейса и
+              понятие UI; Применение модульной сетки и создание адаптивного
+              дизайна.
+            </li>
+          </ul>
+          <ul>
+            <li class="year">2018</li>
+            <li class="place">IT Школа MyFreedom, UX/UI-дизайн</li>
+            <li class="position">
+              Психология графических интерфейсов, стилистика и колористика;
+              Постановка задачи, брифинг и сбор требований; UX-стратегия и
+              UX-концепция;> Проектирование механики, логики и архитектуры;
+              Тестирование и защита прототипов;> Психофизиология и принципы
+              хорошего интерфейса.
+            </li>
+          </ul>
+          <ul>
+            <li class="year">2019</li>
+            <li class="place">
+              IT Школа MyFreedom, Пре-курс: Frontend-разработка
+            </li>
+            <li class="position">
+              Основные теги и атрибуты, структура макета, семантическая верстка,
+              свойства CSS и селекторы; Построение макета с использованием
+              «классических» свойств: float, display и position; Построение
+              макета на основе flexbox-модели; Адаптивная верстка с
+              использованием медиа-запросов; Использование SASS/SCSS для
+              оптимизации написания кода.
+            </li>
+          </ul>
+          <ul>
+            <li class="year">2019</li>
+            <li class="place">
+              IT Школа MyFreedom, Курс Frontend-разработки: JavaScript
+            </li>
+            <li class="position">
+              Типы и структуры данных, циклы и основы алгоритмизации; Функции,
+              замыкания и hoisting, объекты и прототипы; Конструкторы, классы,
+              модули и другие нововведения в языке; Работы с элементами DOM
+              дерева; Работа с событиями. Делегирование событий. Всплытие и
+              перехват; Асинхронные операции и связь с сервером.
+            </li>
+          </ul>
+          <ul>
+            <li class="year">2020</li>
+            <li class="place">
+              The Rolling Scopes School, JavaScript/Frontend-разработка
+            </li>
+            <li class="position">
+              Git, GitHub, оформление commit и pull request; Верстка адаптивного
+              макета; Core JS; Решения алгоритмических задач; DOM, DOM Events,
+              Browser API; Основы NodeJS.
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="info__skills">
+        <h2 class="skills__title">Ключевые навыки</h2>
+        <div class="skills__description">
+          <ul>
+            <li>
+              <ul class="skill">
+                <li class="name">T-Flex</li>
+                <li class="tflex"></li>
               </ul>
-            </details>
-          </section>
-
-          <section class="main__summary">
-            <details open>
-              <summary>
-                <h3>Summary</h3>
-              </summary>
-              <p>
-                Always wondered how the Web works. There is a great desire to
-                master the "magic" of Front-end development, but there is no
-                experience, skills and mentoring for the development vector. I
-                like both UI/UX-design and layout with Front-end development.
-                Therefore, I want to change my current occupation, find an
-                internship to acquire the necessary skills and experience in the
-                field of Web design and Web development with further employment
-              </p>
-            </details>
-          </section>
-
-          <section class="main__skills">
-            <details open>
-              <summary>
-                <h3>Skills</h3>
-              </summary>
-              <ul>
-                <li>HTML5 (basic, in the process of studying)</li>
-                <li>CSS3 (basic, in the process of studying)</li>
-                <li>JavaScript (in the process of studying)</li>
-                <li>Git (basic, in the process of studying)</li>
-                <li>Webpack 4 (basic, in the process of studying)</li>
-                <li>Visual Studio Code</li>
-                <li>Figma</li>
-                <li>Photoshop</li>
+            </li>
+            <li>
+              <ul class="skill">
+                <li class="name">Solid Works</li>
+                <li class="solidworks"></li>
               </ul>
-            </details>
-          </section>
-
-          <section class="main__examples">
-            <details open>
-              <summary>
-                <h3>Code examples</h3>
-              </summary>
-              <p>
-                Examples of my self-education results everybody can see
-                <a href="https://github.com/BertFrontEnd" target="_blank"
-                  >here</a
-                >
-              </p>
-            </details>
-          </section>
-
-          <section class="main__experience">
-            <details open>
-              <summary>
-                <h3>Experience</h3>
-              </summary>
-              <p>
-                I took courses UX/UI design at IT School Myfreedom in Minsk. I
-                also take an online course in Adobe After Effects animation and
-                Adobe Illustrator vector graphics. I like working in Figma and
-                Photoshop. I also completed the HTML5/CSS3 preparatory course
-                and JavaScript/React frontend course at Myfreedom IT School. I
-                know what adaptive cross-browser layout, SASS/SCSS preprocessor,
-                WebPack, yarn package managers and GIT
-              </p>
-            </details>
-          </section>
-
-          <section class="main__education">
-            <details open>
-              <summary>
-                <h3>Education</h3>
-              </summary>
-              <p>
-                2009-2011 - Belarusian National Technical University, Mechanical
-                engineering faculty, The Department of Metal-Cutting Machines
-                and Tool
-              </p>
-            </details>
-          </section>
-
-          <section class="main__english">
-            <details open>
-              <summary>
-                <h3>English</h3>
-              </summary>
-              <p>
-                A1. But I keep learn English to this day with
-                <a href="https://ru.duolingo.com/learn" target="_blank"
-                  >Duolingo</a
-                >,
-                <a href="https://lingualeo.com/ru/dashboard" target="_blank"
-                  >Lingualeo</a
-                >
-                and
-                <a
-                  href="https://www.youtube.com/channel/UC_gnm9DsRFalWy5WZBkYRXg"
-                  target="_blank"
-                  >ValnVille ENG</a
-                >
-              </p>
-            </details>
-          </section>
+            </li>
+            <li>
+              <ul class="skill">
+                <li class="name">Office</li>
+                <li class="office"></li>
+              </ul>
+            </li>
+            <li>
+              <ul class="skill">
+                <li class="name">Photoshop</li>
+                <li class="photoshop"></li>
+              </ul>
+            </li>
+            <li>
+              <ul class="skill">
+                <li class="name">Figma</li>
+                <li class="figma"></li>
+              </ul>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <ul class="skill">
+                <li class="name">Adobe XD</li>
+                <li class="adobexd"></li>
+              </ul>
+            </li>
+            <li>
+              <ul class="skill">
+                <li class="name">XMind</li>
+                <li class="xmind"></li>
+              </ul>
+            </li>
+            <li>
+              <ul class="skill">
+                <li class="name">Printing</li>
+                <li class="printing"></li>
+              </ul>
+            </li>
+            <li>
+              <ul class="skill">
+                <li class="name">VS Code</li>
+                <li class="vscode"></li>
+              </ul>
+            </li>
+            <li>
+              <ul class="skill">
+                <li class="name">Git</li>
+                <li class="git"></li>
+              </ul>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <ul class="skill">
+                <li class="name">JavaScript</li>
+                <li class="javascript"></li>
+              </ul>
+            </li>
+            <li>
+              <ul class="skill">
+                <li class="name">HTML5</li>
+                <li class="html5"></li>
+              </ul>
+            </li>
+            <li>
+              <ul class="skill">
+                <li class="name">CSS3</li>
+                <li class="css3"></li>
+              </ul>
+            </li>
+            <li>
+              <ul class="skill">
+                <li class="name">SASS</li>
+                <li class="sass"></li>
+              </ul>
+            </li>
+            <li>
+              <ul class="skill">
+                <li class="name">Webpack</li>
+                <li class="webpack"></li>
+              </ul>
+            </li>
+          </ul>
         </div>
       </div>
-    </main>
-
-    <footer class="footer">
-      <div class="container">
-        <div class="footer__inner">
-          <div class="footer__link">
-            <ul>
-              <li>
-                <a href="https://github.com/BertFrontEnd" target="_blank"
-                  ><img src="assets/github.svg" alt="vk" width="20" height="20"
-                /></a>
-              </li>
-              <li>
-                <a href="https://rs.school/js" target="_blank"
-                  ><img
-                    src="assets/rs-school-js.svg"
-                    alt="rsschool"
-                    width="60"
-                    height="20"
-                /></a>
-              </li>
-            </ul>
-          </div>
-          <div class="footer__deadline">
-            <time datetime="2021">2021</time>
-          </div>
-
-          <div class="footer__social">
-            <ul>
-              <li>
-                <a
-                  href="https://www.instagram.com/brilevskiisergei/"
-                  target="_blank"
-                  ><img
-                    src="assets/instagram.svg"
-                    alt="instagram"
-                    width="20"
-                    height="20"
-                /></a>
-              </li>
-              <li>
-                <a href="https://vk.com/berton24" target="_blank"
-                  ><img src="assets/vk.svg" alt="vk" width="20" height="20"
-                /></a>
-              </li>
-              <li>
-                <a
-                  href="https://www.facebook.com/profile.php?id=100016742740270"
-                  target="_blank"
-                  ><img
-                    src="assets/facebook.svg"
-                    alt="facebook"
-                    width="20"
-                    height="20"
-                /></a>
-              </li>
-            </ul>
-          </div>
+      <div class="info__language">
+        <h2 class="language__title">Знание языков</h2>
+        <div class="language__description">
+          <ul>
+            <li>
+              <ul class="level">
+                <li class="lang">Русский</li>
+                <li class="russian"></li>
+              </ul>
+            </li>
+            <li>
+              <ul class="level">
+                <li class="lang">Белорусский</li>
+                <li class="belarusian"></li>
+              </ul>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <ul class="level">
+                <li class="lang">Польский</li>
+                <li class="polish"></li>
+              </ul>
+            </li>
+            <li>
+              <ul class="level">
+                <li class="lang">Английский</li>
+                <li class="english"></li>
+              </ul>
+            </li>
+          </ul>
         </div>
       </div>
-    </footer>
+    </section>
   </body>
 </html>
