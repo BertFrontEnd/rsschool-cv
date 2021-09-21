@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./assets/favicon.svg" />
+    <link rel="stylesheet" href="./assets/reset.css" />
+    <link rel="stylesheet" href="./assets/font.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>My Curriculum Vitae</title>
+    <script src="script.js" defer></script>
+  </head>
+
+  <body>
+    <svg style="display: none">
+      <symbol id="link" viewBox="0 0 482.136 482.135">
+        <g>
+          <path
+            d="M455.482,198.184L326.829,326.832c-35.535,35.54-93.108,35.54-128.646,0l-42.881-42.886l42.881-42.876l42.884,42.876
+		c11.845,11.822,31.064,11.846,42.886,0l128.644-128.643c11.816-11.831,11.816-31.066,0-42.9l-42.881-42.881
+		c-11.822-11.814-31.064-11.814-42.887,0l-45.928,45.936c-21.292-12.531-45.491-17.905-69.449-16.291l72.501-72.526
+		c35.535-35.521,93.136-35.521,128.644,0l42.886,42.881C491.018,105.045,491.018,162.663,455.482,198.184z M201.206,366.698
+		l-45.903,45.9c-11.845,11.846-31.064,11.817-42.881,0l-42.884-42.881c-11.845-11.821-11.845-31.041,0-42.886l128.646-128.648
+		c11.819-11.814,31.069-11.814,42.884,0l42.886,42.886l42.876-42.886l-42.876-42.881c-35.54-35.521-93.113-35.521-128.65,0
+		L26.655,283.946c-35.538,35.545-35.538,93.146,0,128.652l42.883,42.882c35.51,35.54,93.11,35.54,128.646,0l72.496-72.499
+		C246.724,384.578,222.588,379.197,201.206,366.698z"
+          />
+        </g>
+      </symbol>
+    </svg>
+
+    <main class="wrapper">
+      <nav class="navigation__menu">
+        <ul>
+          <li><a href="#connection">Information</a></li>
+          <li><a href="#reference">Projects</a></li>
+          <li><a href="#code">Sample code</a></li>
+          <li><a href="#self">About myself</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#experience">Work experience</a></li>
+          <li><a href="#skills">Key skills</a></li>
+          <li><a href="#language">Knowledge of languages</a></li>
+          <li><a href="#up">To Up</a></li>
+        </ul>
+      </nav>
+
+      <section class="burger__menu">
+        <label class="menu__burger">
+          <input type="checkbox" class="burger__switcher" />
+          <span class="burger__line line--top"></span>
+          <span class="burger__line line--middle"></span>
+          <span class="burger__line line--bottom"></span>
+        </label>
+      </section>
+
+      <section id="up" class="contact__info">
+        <div class="info__photo">
+          <img src="./assets/photo.jpg" alt="photo" />
+        </div>
+        <div id="connection" class="info__connection">
+          <h3>Information</h3>
+          <ul class="connection">
+            <li class="name">
+              <span>Name</span><a href="#">Sergey Brilevsky</a>
+            </li>
+            <li class="location">
+              <span>Address</span
+              ><a href="https://goo.gl/maps/nWtTsVxreu1sG1yh6" target="_blank"
+                >Minsk, Belarus</a
+              >
+            </li>
+            <li class="phone">
+              <span>Phone</span><a href="tel:+375297889513">+375-29-7889513</a>
+            </li>
+            <li class="mail">
+              <span>Mail</span
+              ><a href="mailto:Berton@yandex.ru" target="_blank"
+                >Berton@yandex.ru</a
+              >
+            </li>
+            <li class="linkedin">
+              <span>LinkedIn</span
+              ><a href="https://www.linkedin.com/in/bertcad/" target="_blank"
+                >BertCAD</a
+              >
+            </li>
+            <li class="telegram">
+              <span>Telegram</span
+              ><a href="https://t.me/BertCAD" target="_blank">BertCAD</a>
+            </li>
+            <li class="github">
+              <span>GitHub</span
+              ><a href="https://github.com/BertFrontEnd" target="_blank"
+                >BertFrontEnd</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div id="reference" class="info__reference">
+          <h3>Projects</h3>
+          <ul class="reference">
+            <li>
+              <a
+                href="https://bertfrontend.github.io/singolo/index.html"
+                target="_blank"
+                title="Singolo landing"
+              >
+                <svg class="icon-link">
+                  <use xlink:href="#link"></use>
+                </svg>
+                Singolo </a
+              ><span>html</span><span>sass</span><span>javascript</span
+              ><span>photoshop</span>
+            </li>
+            <li>
+              <a
+                href="https://bertfrontend-online-zoo.netlify.app/"
+                target="_blank"
+                title="Site of animals"
+              >
+                <svg class="icon-link">
+                  <use xlink:href="#link"></use>
+                </svg>
+                Online Zoo</a
+              ><span>html</span><span>sass</span><span>javascript</span
+              ><span>figma</span>
+            </li>
+            <li>
+              <a
+                href="https://bertfrontend-momentum.netlify.app/"
+                target="_blank"
+                title="Time tracking App"
+              >
+                <svg class="icon-link">
+                  <use xlink:href="#link"></use>
+                </svg>
+                Momentum</a
+              ><span>html</span><span>sass</span><span>javascript</span>
+            </li>
+            <li>
+              <a
+                href="https://bertfrontend-photo-filter.netlify.app/"
+                target="_blank"
+                title="Photo App"
+              >
+                <svg class="icon-link">
+                  <use xlink:href="#link"></use>
+                </svg>
+                Photo Filter</a
+              ><span>html</span><span>sass</span><span>javascript</span>
+            </li>
+            <li>
+              <a
+                href="https://bertfrontend-virtual-piano.netlify.app/"
+                target="_blank"
+                title="Piano App"
+              >
+                <svg class="icon-link">
+                  <use xlink:href="#link"></use>
+                </svg>
+                Virtual Piano</a
+              ><span>html</span><span>sass</span><span>javascript</span>
+            </li>
+            <li>
+              <a
+                href="https://bertfrontend-js-clock.netlify.app/"
+                target="_blank"
+                title="Digital & Analog Clock"
+              >
+                <svg class="icon-link">
+                  <use xlink:href="#link"></use>
+                </svg>
+                JS Clock</a
+              ><span>html</span><span>sass</span><span>javascript</span>
+            </li>
+            <li>
+              <a
+                href="https://bertfrontend-calculator.netlify.app/"
+                target="_blank"
+                title="JavaScript Calculator"
+              >
+                <svg class="icon-link">
+                  <use xlink:href="#link"></use>
+                </svg>
+                Calculator</a
+              ><span>html</span><span>sass</span><span>javascript</span>
+            </li>
+            <li>
+              <a
+                href="https://bertfrontend-match-match-game.netlify.app/"
+                target="_blank"
+                title="Game App"
+              >
+                <svg class="icon-link">
+                  <use xlink:href="#link"></use>
+                </svg>
+                Match-Match Game</a
+              ><span>html</span><span>sass</span><span>javascript</span
+              ><span>figma</span>
+            </li>
+            <li>
+              <a
+                href="https://bertfrontend-virtual-keyboard.netlify.app/"
+                target="_blank"
+                title="JavaScript Keyboard"
+              >
+                <svg class="icon-link">
+                  <use xlink:href="#link"></use>
+                </svg>
+                Virtual Keyboard</a
+              ><span>html</span><span>sass</span><span>javascript</span>
+            </li>
+            <li>
+              <a
+                href="https://bertfrontend-wildlife.netlify.app/"
+                target="_blank"
+                title="Wild Life landing"
+              >
+                <svg class="icon-link">
+                  <use xlink:href="#link"></use>
+                </svg>
+                Wild Life</a
+              ><span>html</span><span>sass</span>
+            </li>
+            <li>
+              <a
+                href="https://bertfrontend-webdev.netlify.app/"
+                target="_blank"
+                title="Web Dev landing"
+              >
+                <svg class="icon-link">
+                  <use xlink:href="#link"></use>
+                </svg>
+                Web Dev</a
+              ><span>html</span><span>sass</span><span>figma</span>
+            </li>
+            <li>
+              <a
+                href="https://www.behance.net/berton502b"
+                target="_blank"
+                title="Projects at Behance"
+              >
+                <svg class="icon-link">
+                  <use xlink:href="#link"></use>
+                </svg>
+                Web Design projects</a
+              ><span>adobexd</span><span>behance</span>
+            </li>
+          </ul>
+        </div>
+        <div id="code" class="info__code">
+          <h3>Sample code</h3>
+          <code class="code__highlight">
+            <span class="highlight__blue">&nbsp;&nbsp;window</span>
+            <span>.</span>
+            <span class="highlight__orange">addEventListener</span>
+            <span class="highlight__yellow">(</span>
+            <span class="highlight__lightered">'load'</span>
+            <span>,&nbsp;</span>
+            <span class="highlight__pink">()</span>
+            <span class="highlight__blue">&nbsp;=>&nbsp;</span>
+            <span class="highlight__pink">{</span>
+            <br />
+            <span class="highlight__pink"
+              >&nbsp;&nbsp;&nbsp;&nbsp;if&nbsp;</span
+            >
+            <span class="highlight__blue">(window</span>
+            <span>.</span>
+            <span class="highlight__blue">location</span>
+            <span>.</span>
+            <span class="highlight__blue">hash</span>
+            <span>&nbsp;===&nbsp;</span>
+            <span class="highlight__lightered">''</span>
+            <span class="highlight__blue">)&nbsp;</span>
+            <span class="highlight__blue">{&nbsp;</span>
+            <br />
+            <span class="highlight__blue"
+              >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;window</span
+            >
+            <span>.</span>
+            <span class="highlight__blue">location</span>
+            <span>.</span>
+            <span class="highlight__blue">hash</span>
+            <span>&nbsp;=&nbsp;</span>
+            <span class="highlight__lightered">'about'</span>
+            <span>;</span>
+            <br />
+            <span class="highlight__blue">&nbsp;&nbsp;&nbsp;&nbsp;}</span>
+            <br />
+            <span class="highlight__pink">&nbsp;&nbsp;}</span>
+            <span class="highlight__yellow">)</span>
+            <span>;</span>
+          </code>
+        </div>
+        <div id="self" class="info__self">
+          <h3>About myself</h3>
+          <div class="self__introduction">
+            <iframe
+              src="https://www.youtube.com/embed/IHBmhDMuQRk"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </section>
+
+      <section class="experience__info">
+        <div class="info__bio">
+          <h1>Sergey Brilevsky</h1>
+        </div>
+        <div id="education" class="info__education">
+          <h2 class="education__title">Education</h2>
+          <div class="education__description">
+            <ul>
+              <li class="year">2002-2006</li>
+              <li class="institution">Lida Technical College</li>
+              <li class="faculty">
+                Measuring instruments and apparatus, Electromechanical
+                technician
+              </li>
+            </ul>
+            <ul>
+              <li class="year">2006-2011</li>
+              <li class="institution">
+                Belarusian National Technical University
+              </li>
+              <li class="faculty">
+                Faculty of Mechanical Engineering, Technological equipment
+                mechanical engineering, Design Engineer
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div id="experience" class="info__experience">
+          <h2 class="experience__title">Work experience</h2>
+          <div class="experience__description">
+            <ul>
+              <li class="year">2011-2021</li>
+              <li class="place">OJSC "MZOR", Leading design engineer</li>
+              <li class="position">
+                Production area of unique heavy duty multifunctional machine
+                tools; Registration and development of design documentation
+                machine tool parts in CAD systems; 3D models, assembly drawings,
+                detailing, specifications, accompanying documentation; Technical
+                support of design developments during their manufacturing and
+                installation into units.
+              </li>
+            </ul>
+            <ul>
+              <li class="year">2013</li>
+              <li class="place">IT Academy BelHard, JavaScript and HTML5</li>
+              <li class="position">
+                Specification, use of audio and video elements; Validation HTML5
+                and communication with the server; Basic JavaScript language
+                constructs and typing; Client-side JavaScript and server
+                requests.
+              </li>
+            </ul>
+            <ul>
+              <li class="year">2017</li>
+              <li class="place">
+                School of Web Design HIGHLIGHT, Web Design. The basics
+              </li>
+              <li class="position">
+                Creation of a prototype, tasks to be solved and its types; Work
+                with visual component and the concept of "mood board"; Tasks to
+                be solved icons and combination of font pairs; Choosing the
+                right interface and UI concept; Applying a modular grid and
+                creating a responsive design.
+              </li>
+            </ul>
+            <ul>
+              <li class="year">2018</li>
+              <li class="place">IT School MyFreedom, UX / UI-design</li>
+              <li class="position">
+                Psychology of graphical interfaces, stylistics and coloristics;
+                Statement of the problem, briefing and collection of
+                requirements; UX strategy and UX-concept;> Design of mechanics,
+                logic and architecture; Testing and prototyping;>
+                Psychophysiology and principles good interface.
+              </li>
+            </ul>
+            <ul>
+              <li class="year">2019</li>
+              <li class="place">
+                IT School MyFreedom, Pre-course: Frontend Development
+              </li>
+              <li class="position">
+                Basic tags and attributes, layout structure, semantic layout,
+                CSS properties and selectors; Building a layout with using the
+                "classic" properties: float, display and position; Building a
+                layout based on the flexbox model; Adaptive layout using media
+                queries; Using SASS / SCSS to optimize coding.
+              </li>
+            </ul>
+            <ul>
+              <li class="year">2019</li>
+              <li class="place">
+                IT School MyFreedom, Frontend Development Course: JavaScript
+              </li>
+              <li class="position">
+                Data types and structures, loops and algorithms bases;
+                Functions, closures and hoisting, objects and prototypes;
+                Constructors, classes, modules and other innovations in the
+                language; Working with DOM elements wood; Working with events.
+                Delegating events. Surfacing and interception; Asynchronous
+                operations and communication with the server.
+              </li>
+            </ul>
+            <ul>
+              <li class="year">2020</li>
+              <li class="place">
+                The Rolling Scopes School, JavaScript / Frontend Development
+              </li>
+              <li class="position">
+                Git, GitHub, commit and pull request; Layout responsive layout;
+                Core JS; Algorithmic problem solutions; DOM, DOM Events, Browser
+                API; NodeJS basics.
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div id="skills" class="info__skills">
+          <h2 class="skills__title">Key skills</h2>
+          <div class="skills__description">
+            <ul>
+              <li>
+                <ul class="skill">
+                  <li class="name">T-Flex</li>
+                  <li class="tflex"></li>
+                </ul>
+              </li>
+              <li>
+                <ul class="skill">
+                  <li class="name">Solid Works</li>
+                  <li class="solidworks"></li>
+                </ul>
+              </li>
+              <li>
+                <ul class="skill">
+                  <li class="name">Office</li>
+                  <li class="office"></li>
+                </ul>
+              </li>
+              <li>
+                <ul class="skill">
+                  <li class="name">Photoshop</li>
+                  <li class="photoshop"></li>
+                </ul>
+              </li>
+              <li>
+                <ul class="skill">
+                  <li class="name">Figma</li>
+                  <li class="figma"></li>
+                </ul>
+              </li>
+            </ul>
+            <ul>
+              <li>
+                <ul class="skill">
+                  <li class="name">Adobe XD</li>
+                  <li class="adobexd"></li>
+                </ul>
+              </li>
+              <li>
+                <ul class="skill">
+                  <li class="name">XMind</li>
+                  <li class="xmind"></li>
+                </ul>
+              </li>
+              <li>
+                <ul class="skill">
+                  <li class="name">Printing</li>
+                  <li class="printing"></li>
+                </ul>
+              </li>
+              <li>
+                <ul class="skill">
+                  <li class="name">VS Code</li>
+                  <li class="vscode"></li>
+                </ul>
+              </li>
+              <li>
+                <ul class="skill">
+                  <li class="name">Git</li>
+                  <li class="git"></li>
+                </ul>
+              </li>
+            </ul>
+            <ul>
+              <li>
+                <ul class="skill">
+                  <li class="name">JavaScript</li>
+                  <li class="javascript"></li>
+                </ul>
+              </li>
+              <li>
+                <ul class="skill">
+                  <li class="name">HTML5</li>
+                  <li class="html5"></li>
+                </ul>
+              </li>
+              <li>
+                <ul class="skill">
+                  <li class="name">CSS3</li>
+                  <li class="css3"></li>
+                </ul>
+              </li>
+              <li>
+                <ul class="skill">
+                  <li class="name">SASS</li>
+                  <li class="sass"></li>
+                </ul>
+              </li>
+              <li>
+                <ul class="skill">
+                  <li class="name">Webpack</li>
+                  <li class="webpack"></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div id="language" class="info__language">
+          <h2 class="language__title">Knowledge of languages</h2>
+          <div class="language__description">
+            <ul>
+              <li>
+                <ul class="level">
+                  <li class="lang">Russian</li>
+                  <li class="russian"></li>
+                </ul>
+              </li>
+              <li>
+                <ul class="level">
+                  <li class="lang">Belorussian</li>
+                  <li class="belarusian"></li>
+                </ul>
+              </li>
+            </ul>
+            <ul>
+              <li>
+                <ul class="level">
+                  <li class="lang">Polish</li>
+                  <li class="polish"></li>
+                </ul>
+              </li>
+              <li>
+                <ul class="level">
+                  <li class="lang">English</li>
+                  <li class="english"></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="info__copyright">
+          <p class="copyright__year">© 2021</p>
+          <a href="https://rs.school/" class="copyright__school" target="_blank"
+            >RSSchool</a
+          >
+          <a
+            href="https://github.com/BertFrontEnd/"
+            class="copyright__username"
+            target="_blank"
+            >BertFrontEnd</a
+          >
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

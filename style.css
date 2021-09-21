@@ -1,0 +1,1238 @@
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Montserrat Regular', sans-serif;
+  font-size: 1.6rem;
+}
+
+h1 {
+  font-size: 2rem;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: #4b4b4b;
+}
+
+h2 {
+  position: relative;
+  width: 100%;
+  margin-bottom: 20px;
+  font-size: 1.4rem;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: #4b4b4b;
+}
+
+h2::after {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 88%;
+  height: 1px;
+  content: '';
+  background-color: #4b4b4b;
+}
+
+h3 {
+  position: relative;
+  width: 100%;
+  margin-bottom: 20px;
+  padding-bottom: 4px;
+  font-size: 1.4rem;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+h3::after {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 95%;
+  height: 1px;
+  content: '';
+  background-color: #ffffff;
+}
+
+a {
+  font-size: 1rem;
+  color: #cccccc;
+  text-decoration: none;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+}
+
+a:hover {
+  color: #fff;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  position: relative;
+  max-width: 920px;
+  margin: 0 auto;
+}
+
+.wrapper .navigation__menu {
+  display: none;
+}
+
+.wrapper .burger__menu {
+  display: none;
+}
+
+.wrapper .burger__menu .menu__burger .burger__line {
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+}
+
+.wrapper .contact__info {
+  justify-items: center;
+  position: relative;
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  padding: 20px;
+  overflow: hidden;
+  background-color: #5e6464;
+}
+
+.wrapper .contact__info .info__photo {
+  z-index: 1;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  width: 180px;
+  height: 180px;
+  margin: 20px 0;
+}
+
+.wrapper .contact__info .info__photo img {
+  border-radius: 50%;
+  border: 2px solid #fff;
+  -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.1), 0 10px 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 14px 28px rgba(0, 0, 0, 0.1), 0 10px 10px rgba(0, 0, 0, 0.1);
+  -webkit-filter: saturate(30%);
+          filter: saturate(30%);
+}
+
+.wrapper .contact__info .info__connection {
+  width: 100%;
+  padding-top: 20px;
+}
+
+.wrapper .contact__info .info__connection li {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 20px;
+  margin-bottom: 5px;
+  padding-left: 45px;
+  color: #fff;
+}
+
+.wrapper .contact__info .info__connection li::before {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 24px;
+  height: 24px;
+  content: '';
+  background-repeat: no-repeat;
+  background-size: contain;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.wrapper .contact__info .info__connection .name::before {
+  background-image: url(./assets/icon/person.svg);
+}
+
+.wrapper .contact__info .info__connection .location::before {
+  background-image: url(./assets/icon/location.svg);
+}
+
+.wrapper .contact__info .info__connection .phone::before {
+  background-image: url(./assets/icon/phone.svg);
+}
+
+.wrapper .contact__info .info__connection .mail::before {
+  background-image: url(./assets/icon/mail.svg);
+}
+
+.wrapper .contact__info .info__connection .linkedin::before {
+  background-image: url(./assets/icon/linkedin.svg);
+}
+
+.wrapper .contact__info .info__connection .telegram::before {
+  background-image: url(./assets/icon/telegram.svg);
+}
+
+.wrapper .contact__info .info__connection .github::before {
+  background-image: url(./assets/icon/github.svg);
+}
+
+.wrapper .contact__info .info__connection span {
+  font-size: 1.4rem;
+  letter-spacing: 1.5px;
+}
+
+.wrapper .contact__info .info__reference {
+  width: 100%;
+  padding-top: 20px;
+}
+
+.wrapper .contact__info .info__reference .reference {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 20px;
+}
+
+.wrapper .contact__info .info__reference .reference li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 10px;
+}
+
+.wrapper .contact__info .info__reference .reference li a {
+  margin-right: 5px;
+}
+
+.wrapper .contact__info .info__reference .reference li a:hover .icon-link {
+  fill: #fff;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+}
+
+.wrapper .contact__info .info__reference .reference li .icon-link {
+  width: 10px;
+  height: 10px;
+  margin-right: 5px;
+  fill: #cccccc;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+}
+
+.wrapper .contact__info .info__reference .reference li span {
+  margin: 0 2px;
+  padding: 5px;
+  font-size: 0.8rem;
+  line-height: 5px;
+  color: #4b4b4b;
+  border-radius: 4px;
+  background-color: #ffffff;
+  pointer-events: none;
+}
+
+.wrapper .contact__info .info__reference .reference li:last-child {
+  margin-bottom: 0;
+}
+
+.wrapper .contact__info .info__code {
+  width: 100%;
+  padding-top: 20px;
+}
+
+.wrapper .contact__info .info__code .code__highlight {
+  display: inline-block;
+  width: 100%;
+  text-align: left;
+  font-size: 0;
+  padding: 10px;
+  color: #d4c59f;
+  border-radius: 4px;
+  background-color: #ffffff;
+}
+
+.wrapper .contact__info .info__code .code__highlight span {
+  font-size: 1rem;
+}
+
+.wrapper .contact__info .info__code .code__highlight .highlight__blue {
+  color: #9cdcfe;
+}
+
+.wrapper .contact__info .info__code .code__highlight .highlight__orange {
+  color: #dcdc8b;
+}
+
+.wrapper .contact__info .info__code .code__highlight .highlight__yellow {
+  color: #dbd700;
+}
+
+.wrapper .contact__info .info__code .code__highlight .highlight__lightered {
+  color: #ac916a;
+}
+
+.wrapper .contact__info .info__code .code__highlight .highlight__pink {
+  color: #da5583;
+}
+
+.wrapper .contact__info .info__self {
+  width: 100%;
+  padding-top: 20px;
+}
+
+.wrapper .contact__info .info__self .self__introduction {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 10px;
+}
+
+.wrapper .contact__info .info__self .self__introduction iframe {
+  width: 300px;
+  height: auto;
+  border-radius: 4px;
+}
+
+.wrapper .experience__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  padding: 15px 20px;
+  background-color: #f5f5f5;
+}
+
+.wrapper .experience__info .info__bio {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  margin-bottom: 20px;
+}
+
+.wrapper .experience__info .info__education,
+.wrapper .experience__info .info__experience,
+.wrapper .experience__info .info__skills,
+.wrapper .experience__info .info__language {
+  width: 100%;
+  padding-top: 25px;
+  color: #4b4b4b;
+}
+
+.wrapper .experience__info .info__education .education__title,
+.wrapper .experience__info .info__education .experience__title,
+.wrapper .experience__info .info__education .skills__title,
+.wrapper .experience__info .info__education .language__title,
+.wrapper .experience__info .info__experience .education__title,
+.wrapper .experience__info .info__experience .experience__title,
+.wrapper .experience__info .info__experience .skills__title,
+.wrapper .experience__info .info__experience .language__title,
+.wrapper .experience__info .info__skills .education__title,
+.wrapper .experience__info .info__skills .experience__title,
+.wrapper .experience__info .info__skills .skills__title,
+.wrapper .experience__info .info__skills .language__title,
+.wrapper .experience__info .info__language .education__title,
+.wrapper .experience__info .info__language .experience__title,
+.wrapper .experience__info .info__language .skills__title,
+.wrapper .experience__info .info__language .language__title {
+  position: relative;
+  padding-left: 50px;
+}
+
+.wrapper .experience__info .info__education .education__title::before,
+.wrapper .experience__info .info__education .experience__title::before,
+.wrapper .experience__info .info__education .skills__title::before,
+.wrapper .experience__info .info__education .language__title::before,
+.wrapper .experience__info .info__experience .education__title::before,
+.wrapper .experience__info .info__experience .experience__title::before,
+.wrapper .experience__info .info__experience .skills__title::before,
+.wrapper .experience__info .info__experience .language__title::before,
+.wrapper .experience__info .info__skills .education__title::before,
+.wrapper .experience__info .info__skills .experience__title::before,
+.wrapper .experience__info .info__skills .skills__title::before,
+.wrapper .experience__info .info__skills .language__title::before,
+.wrapper .experience__info .info__language .education__title::before,
+.wrapper .experience__info .info__language .experience__title::before,
+.wrapper .experience__info .info__language .skills__title::before,
+.wrapper .experience__info .info__language .language__title::before {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 40px;
+  height: 40px;
+  content: '';
+  border-radius: 50%;
+  border: 1px solid #4b4b4b;
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.wrapper .experience__info .info__education .education__title::before,
+.wrapper .experience__info .info__experience .education__title::before,
+.wrapper .experience__info .info__skills .education__title::before,
+.wrapper .experience__info .info__language .education__title::before {
+  background-size: 70%;
+  background-image: url(./assets/icon/education.svg);
+}
+
+.wrapper .experience__info .info__education .experience__title::before,
+.wrapper .experience__info .info__experience .experience__title::before,
+.wrapper .experience__info .info__skills .experience__title::before,
+.wrapper .experience__info .info__language .experience__title::before {
+  background-size: 66%;
+  background-image: url(./assets/icon/job.svg);
+}
+
+.wrapper .experience__info .info__education .skills__title::before,
+.wrapper .experience__info .info__experience .skills__title::before,
+.wrapper .experience__info .info__skills .skills__title::before,
+.wrapper .experience__info .info__language .skills__title::before {
+  background-size: 50%;
+  background-image: url(./assets/icon/skill.svg);
+}
+
+.wrapper .experience__info .info__education .language__title::before,
+.wrapper .experience__info .info__experience .language__title::before,
+.wrapper .experience__info .info__skills .language__title::before,
+.wrapper .experience__info .info__language .language__title::before {
+  background-size: 50%;
+  background-image: url(./assets/icon/language.svg);
+}
+
+.wrapper .experience__info .info__education .education__description,
+.wrapper .experience__info .info__experience .education__description,
+.wrapper .experience__info .info__skills .education__description,
+.wrapper .experience__info .info__language .education__description {
+  margin-left: 20px;
+}
+
+.wrapper .experience__info .info__education .education__description ul,
+.wrapper .experience__info .info__experience .education__description ul,
+.wrapper .experience__info .info__skills .education__description ul,
+.wrapper .experience__info .info__language .education__description ul {
+  position: relative;
+  margin-bottom: 10px;
+  padding-left: 20px;
+  border-left: 1px solid #4b4b4b;
+}
+
+.wrapper .experience__info .info__education .education__description ul::before,
+.wrapper .experience__info .info__experience .education__description ul::before,
+.wrapper .experience__info .info__skills .education__description ul::before,
+.wrapper .experience__info .info__language .education__description ul::before {
+  position: absolute;
+  top: 0;
+  left: 0%;
+  width: 10px;
+  height: 10px;
+  content: '';
+  border-radius: 50%;
+  border: 1px solid #4b4b4b;
+  background-color: #f5f5f5;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.wrapper .experience__info .info__education .education__description ul .year,
+.wrapper .experience__info .info__education .education__description ul .faculty,
+.wrapper .experience__info .info__experience .education__description ul .year,
+.wrapper .experience__info .info__experience .education__description ul .faculty,
+.wrapper .experience__info .info__skills .education__description ul .year,
+.wrapper .experience__info .info__skills .education__description ul .faculty,
+.wrapper .experience__info .info__language .education__description ul .year,
+.wrapper .experience__info .info__language .education__description ul .faculty {
+  font-size: 1rem;
+}
+
+.wrapper .experience__info .info__education .education__description ul .faculty,
+.wrapper .experience__info .info__experience .education__description ul .faculty,
+.wrapper .experience__info .info__skills .education__description ul .faculty,
+.wrapper .experience__info .info__language .education__description ul .faculty {
+  font-style: italic;
+}
+
+.wrapper .experience__info .info__education .education__description ul .institution,
+.wrapper .experience__info .info__experience .education__description ul .institution,
+.wrapper .experience__info .info__skills .education__description ul .institution,
+.wrapper .experience__info .info__language .education__description ul .institution {
+  font-size: 1.4rem;
+}
+
+.wrapper .experience__info .info__education .experience__description,
+.wrapper .experience__info .info__experience .experience__description,
+.wrapper .experience__info .info__skills .experience__description,
+.wrapper .experience__info .info__language .experience__description {
+  margin-left: 20px;
+}
+
+.wrapper .experience__info .info__education .experience__description ul,
+.wrapper .experience__info .info__experience .experience__description ul,
+.wrapper .experience__info .info__skills .experience__description ul,
+.wrapper .experience__info .info__language .experience__description ul {
+  position: relative;
+  margin-bottom: 10px;
+  padding-left: 20px;
+  border-left: 1px solid #4b4b4b;
+}
+
+.wrapper .experience__info .info__education .experience__description ul::before,
+.wrapper .experience__info .info__experience .experience__description ul::before,
+.wrapper .experience__info .info__skills .experience__description ul::before,
+.wrapper .experience__info .info__language .experience__description ul::before {
+  position: absolute;
+  top: 0;
+  left: 0%;
+  width: 10px;
+  height: 10px;
+  content: '';
+  border-radius: 50%;
+  border: 1px solid #4b4b4b;
+  background-color: #f5f5f5;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.wrapper .experience__info .info__education .experience__description ul .year,
+.wrapper .experience__info .info__education .experience__description ul .position,
+.wrapper .experience__info .info__experience .experience__description ul .year,
+.wrapper .experience__info .info__experience .experience__description ul .position,
+.wrapper .experience__info .info__skills .experience__description ul .year,
+.wrapper .experience__info .info__skills .experience__description ul .position,
+.wrapper .experience__info .info__language .experience__description ul .year,
+.wrapper .experience__info .info__language .experience__description ul .position {
+  font-size: 1rem;
+}
+
+.wrapper .experience__info .info__education .experience__description ul .position,
+.wrapper .experience__info .info__experience .experience__description ul .position,
+.wrapper .experience__info .info__skills .experience__description ul .position,
+.wrapper .experience__info .info__language .experience__description ul .position {
+  font-style: italic;
+}
+
+.wrapper .experience__info .info__education .experience__description ul .place,
+.wrapper .experience__info .info__experience .experience__description ul .place,
+.wrapper .experience__info .info__skills .experience__description ul .place,
+.wrapper .experience__info .info__language .experience__description ul .place {
+  display: inline-block;
+  position: relative;
+  font-size: 1.4rem;
+}
+
+.wrapper .experience__info .info__education .skills__description,
+.wrapper .experience__info .info__experience .skills__description,
+.wrapper .experience__info .info__skills .skills__description,
+.wrapper .experience__info .info__language .skills__description {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 500px;
+  margin-left: 20px;
+  margin-bottom: 10px;
+  padding-left: 20px;
+  border-left: 1px solid #4b4b4b;
+}
+
+.wrapper .experience__info .info__education .skills__description::before,
+.wrapper .experience__info .info__experience .skills__description::before,
+.wrapper .experience__info .info__skills .skills__description::before,
+.wrapper .experience__info .info__language .skills__description::before {
+  position: absolute;
+  top: 0;
+  left: 0%;
+  width: 10px;
+  height: 10px;
+  content: '';
+  border-radius: 50%;
+  border: 1px solid #4b4b4b;
+  background-color: #f5f5f5;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.wrapper .experience__info .info__education .skills__description ul,
+.wrapper .experience__info .info__experience .skills__description ul,
+.wrapper .experience__info .info__skills .skills__description ul,
+.wrapper .experience__info .info__language .skills__description ul {
+  width: 175px;
+  margin-right: 50px;
+}
+
+.wrapper .experience__info .info__education .skills__description ul .skill,
+.wrapper .experience__info .info__experience .skills__description ul .skill,
+.wrapper .experience__info .info__skills .skills__description ul .skill,
+.wrapper .experience__info .info__language .skills__description ul .skill {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+}
+
+.wrapper .experience__info .info__education .skills__description ul .skill .name,
+.wrapper .experience__info .info__experience .skills__description ul .skill .name,
+.wrapper .experience__info .info__skills .skills__description ul .skill .name,
+.wrapper .experience__info .info__language .skills__description ul .skill .name {
+  font-size: 1rem;
+}
+
+.wrapper .experience__info .info__education .skills__description ul .skill .tflex,
+.wrapper .experience__info .info__education .skills__description ul .skill .solidworks,
+.wrapper .experience__info .info__education .skills__description ul .skill .office,
+.wrapper .experience__info .info__education .skills__description ul .skill .photoshop,
+.wrapper .experience__info .info__education .skills__description ul .skill .figma,
+.wrapper .experience__info .info__education .skills__description ul .skill .adobexd,
+.wrapper .experience__info .info__education .skills__description ul .skill .xmind,
+.wrapper .experience__info .info__education .skills__description ul .skill .printing,
+.wrapper .experience__info .info__education .skills__description ul .skill .javascript,
+.wrapper .experience__info .info__education .skills__description ul .skill .html5,
+.wrapper .experience__info .info__education .skills__description ul .skill .css3,
+.wrapper .experience__info .info__education .skills__description ul .skill .sass,
+.wrapper .experience__info .info__education .skills__description ul .skill .git,
+.wrapper .experience__info .info__education .skills__description ul .skill .webpack,
+.wrapper .experience__info .info__education .skills__description ul .skill .vscode,
+.wrapper .experience__info .info__experience .skills__description ul .skill .tflex,
+.wrapper .experience__info .info__experience .skills__description ul .skill .solidworks,
+.wrapper .experience__info .info__experience .skills__description ul .skill .office,
+.wrapper .experience__info .info__experience .skills__description ul .skill .photoshop,
+.wrapper .experience__info .info__experience .skills__description ul .skill .figma,
+.wrapper .experience__info .info__experience .skills__description ul .skill .adobexd,
+.wrapper .experience__info .info__experience .skills__description ul .skill .xmind,
+.wrapper .experience__info .info__experience .skills__description ul .skill .printing,
+.wrapper .experience__info .info__experience .skills__description ul .skill .javascript,
+.wrapper .experience__info .info__experience .skills__description ul .skill .html5,
+.wrapper .experience__info .info__experience .skills__description ul .skill .css3,
+.wrapper .experience__info .info__experience .skills__description ul .skill .sass,
+.wrapper .experience__info .info__experience .skills__description ul .skill .git,
+.wrapper .experience__info .info__experience .skills__description ul .skill .webpack,
+.wrapper .experience__info .info__experience .skills__description ul .skill .vscode,
+.wrapper .experience__info .info__skills .skills__description ul .skill .tflex,
+.wrapper .experience__info .info__skills .skills__description ul .skill .solidworks,
+.wrapper .experience__info .info__skills .skills__description ul .skill .office,
+.wrapper .experience__info .info__skills .skills__description ul .skill .photoshop,
+.wrapper .experience__info .info__skills .skills__description ul .skill .figma,
+.wrapper .experience__info .info__skills .skills__description ul .skill .adobexd,
+.wrapper .experience__info .info__skills .skills__description ul .skill .xmind,
+.wrapper .experience__info .info__skills .skills__description ul .skill .printing,
+.wrapper .experience__info .info__skills .skills__description ul .skill .javascript,
+.wrapper .experience__info .info__skills .skills__description ul .skill .html5,
+.wrapper .experience__info .info__skills .skills__description ul .skill .css3,
+.wrapper .experience__info .info__skills .skills__description ul .skill .sass,
+.wrapper .experience__info .info__skills .skills__description ul .skill .git,
+.wrapper .experience__info .info__skills .skills__description ul .skill .webpack,
+.wrapper .experience__info .info__skills .skills__description ul .skill .vscode,
+.wrapper .experience__info .info__language .skills__description ul .skill .tflex,
+.wrapper .experience__info .info__language .skills__description ul .skill .solidworks,
+.wrapper .experience__info .info__language .skills__description ul .skill .office,
+.wrapper .experience__info .info__language .skills__description ul .skill .photoshop,
+.wrapper .experience__info .info__language .skills__description ul .skill .figma,
+.wrapper .experience__info .info__language .skills__description ul .skill .adobexd,
+.wrapper .experience__info .info__language .skills__description ul .skill .xmind,
+.wrapper .experience__info .info__language .skills__description ul .skill .printing,
+.wrapper .experience__info .info__language .skills__description ul .skill .javascript,
+.wrapper .experience__info .info__language .skills__description ul .skill .html5,
+.wrapper .experience__info .info__language .skills__description ul .skill .css3,
+.wrapper .experience__info .info__language .skills__description ul .skill .sass,
+.wrapper .experience__info .info__language .skills__description ul .skill .git,
+.wrapper .experience__info .info__language .skills__description ul .skill .webpack,
+.wrapper .experience__info .info__language .skills__description ul .skill .vscode {
+  position: relative;
+  width: 60px;
+  height: 10px;
+  border-radius: 16px;
+  background-color: #939393;
+}
+
+.wrapper .experience__info .info__education .skills__description ul .skill .tflex::after,
+.wrapper .experience__info .info__education .skills__description ul .skill .solidworks::after,
+.wrapper .experience__info .info__education .skills__description ul .skill .office::after,
+.wrapper .experience__info .info__education .skills__description ul .skill .photoshop::after,
+.wrapper .experience__info .info__education .skills__description ul .skill .figma::after,
+.wrapper .experience__info .info__education .skills__description ul .skill .adobexd::after,
+.wrapper .experience__info .info__education .skills__description ul .skill .xmind::after,
+.wrapper .experience__info .info__education .skills__description ul .skill .printing::after,
+.wrapper .experience__info .info__education .skills__description ul .skill .javascript::after,
+.wrapper .experience__info .info__education .skills__description ul .skill .html5::after,
+.wrapper .experience__info .info__education .skills__description ul .skill .css3::after,
+.wrapper .experience__info .info__education .skills__description ul .skill .sass::after,
+.wrapper .experience__info .info__education .skills__description ul .skill .git::after,
+.wrapper .experience__info .info__education .skills__description ul .skill .webpack::after,
+.wrapper .experience__info .info__education .skills__description ul .skill .vscode::after,
+.wrapper .experience__info .info__experience .skills__description ul .skill .tflex::after,
+.wrapper .experience__info .info__experience .skills__description ul .skill .solidworks::after,
+.wrapper .experience__info .info__experience .skills__description ul .skill .office::after,
+.wrapper .experience__info .info__experience .skills__description ul .skill .photoshop::after,
+.wrapper .experience__info .info__experience .skills__description ul .skill .figma::after,
+.wrapper .experience__info .info__experience .skills__description ul .skill .adobexd::after,
+.wrapper .experience__info .info__experience .skills__description ul .skill .xmind::after,
+.wrapper .experience__info .info__experience .skills__description ul .skill .printing::after,
+.wrapper .experience__info .info__experience .skills__description ul .skill .javascript::after,
+.wrapper .experience__info .info__experience .skills__description ul .skill .html5::after,
+.wrapper .experience__info .info__experience .skills__description ul .skill .css3::after,
+.wrapper .experience__info .info__experience .skills__description ul .skill .sass::after,
+.wrapper .experience__info .info__experience .skills__description ul .skill .git::after,
+.wrapper .experience__info .info__experience .skills__description ul .skill .webpack::after,
+.wrapper .experience__info .info__experience .skills__description ul .skill .vscode::after,
+.wrapper .experience__info .info__skills .skills__description ul .skill .tflex::after,
+.wrapper .experience__info .info__skills .skills__description ul .skill .solidworks::after,
+.wrapper .experience__info .info__skills .skills__description ul .skill .office::after,
+.wrapper .experience__info .info__skills .skills__description ul .skill .photoshop::after,
+.wrapper .experience__info .info__skills .skills__description ul .skill .figma::after,
+.wrapper .experience__info .info__skills .skills__description ul .skill .adobexd::after,
+.wrapper .experience__info .info__skills .skills__description ul .skill .xmind::after,
+.wrapper .experience__info .info__skills .skills__description ul .skill .printing::after,
+.wrapper .experience__info .info__skills .skills__description ul .skill .javascript::after,
+.wrapper .experience__info .info__skills .skills__description ul .skill .html5::after,
+.wrapper .experience__info .info__skills .skills__description ul .skill .css3::after,
+.wrapper .experience__info .info__skills .skills__description ul .skill .sass::after,
+.wrapper .experience__info .info__skills .skills__description ul .skill .git::after,
+.wrapper .experience__info .info__skills .skills__description ul .skill .webpack::after,
+.wrapper .experience__info .info__skills .skills__description ul .skill .vscode::after,
+.wrapper .experience__info .info__language .skills__description ul .skill .tflex::after,
+.wrapper .experience__info .info__language .skills__description ul .skill .solidworks::after,
+.wrapper .experience__info .info__language .skills__description ul .skill .office::after,
+.wrapper .experience__info .info__language .skills__description ul .skill .photoshop::after,
+.wrapper .experience__info .info__language .skills__description ul .skill .figma::after,
+.wrapper .experience__info .info__language .skills__description ul .skill .adobexd::after,
+.wrapper .experience__info .info__language .skills__description ul .skill .xmind::after,
+.wrapper .experience__info .info__language .skills__description ul .skill .printing::after,
+.wrapper .experience__info .info__language .skills__description ul .skill .javascript::after,
+.wrapper .experience__info .info__language .skills__description ul .skill .html5::after,
+.wrapper .experience__info .info__language .skills__description ul .skill .css3::after,
+.wrapper .experience__info .info__language .skills__description ul .skill .sass::after,
+.wrapper .experience__info .info__language .skills__description ul .skill .git::after,
+.wrapper .experience__info .info__language .skills__description ul .skill .webpack::after,
+.wrapper .experience__info .info__language .skills__description ul .skill .vscode::after {
+  position: absolute;
+  top: 0;
+  left: 0%;
+  height: 100%;
+  content: '';
+  border-radius: 16px;
+  background-color: #5d5d5d;
+}
+
+.wrapper .experience__info .info__education .skills__description ul .skill .tflex::after,
+.wrapper .experience__info .info__experience .skills__description ul .skill .tflex::after,
+.wrapper .experience__info .info__skills .skills__description ul .skill .tflex::after,
+.wrapper .experience__info .info__language .skills__description ul .skill .tflex::after {
+  width: 100%;
+}
+
+.wrapper .experience__info .info__education .skills__description ul .skill .solidworks::after,
+.wrapper .experience__info .info__experience .skills__description ul .skill .solidworks::after,
+.wrapper .experience__info .info__skills .skills__description ul .skill .solidworks::after,
+.wrapper .experience__info .info__language .skills__description ul .skill .solidworks::after {
+  width: 70%;
+}
+
+.wrapper .experience__info .info__education .skills__description ul .skill .office::after,
+.wrapper .experience__info .info__experience .skills__description ul .skill .office::after,
+.wrapper .experience__info .info__skills .skills__description ul .skill .office::after,
+.wrapper .experience__info .info__language .skills__description ul .skill .office::after {
+  width: 90%;
+}
+
+.wrapper .experience__info .info__education .skills__description ul .skill .photoshop::after,
+.wrapper .experience__info .info__experience .skills__description ul .skill .photoshop::after,
+.wrapper .experience__info .info__skills .skills__description ul .skill .photoshop::after,
+.wrapper .experience__info .info__language .skills__description ul .skill .photoshop::after {
+  width: 70%;
+}
+
+.wrapper .experience__info .info__education .skills__description ul .skill .figma::after,
+.wrapper .experience__info .info__experience .skills__description ul .skill .figma::after,
+.wrapper .experience__info .info__skills .skills__description ul .skill .figma::after,
+.wrapper .experience__info .info__language .skills__description ul .skill .figma::after {
+  width: 80%;
+}
+
+.wrapper .experience__info .info__education .skills__description ul .skill .adobexd::after,
+.wrapper .experience__info .info__experience .skills__description ul .skill .adobexd::after,
+.wrapper .experience__info .info__skills .skills__description ul .skill .adobexd::after,
+.wrapper .experience__info .info__language .skills__description ul .skill .adobexd::after {
+  width: 60%;
+}
+
+.wrapper .experience__info .info__education .skills__description ul .skill .xmind::after,
+.wrapper .experience__info .info__experience .skills__description ul .skill .xmind::after,
+.wrapper .experience__info .info__skills .skills__description ul .skill .xmind::after,
+.wrapper .experience__info .info__language .skills__description ul .skill .xmind::after {
+  width: 85%;
+}
+
+.wrapper .experience__info .info__education .skills__description ul .skill .printing::after,
+.wrapper .experience__info .info__experience .skills__description ul .skill .printing::after,
+.wrapper .experience__info .info__skills .skills__description ul .skill .printing::after,
+.wrapper .experience__info .info__language .skills__description ul .skill .printing::after {
+  width: 95%;
+}
+
+.wrapper .experience__info .info__education .skills__description ul .skill .javascript::after,
+.wrapper .experience__info .info__experience .skills__description ul .skill .javascript::after,
+.wrapper .experience__info .info__skills .skills__description ul .skill .javascript::after,
+.wrapper .experience__info .info__language .skills__description ul .skill .javascript::after {
+  width: 70%;
+}
+
+.wrapper .experience__info .info__education .skills__description ul .skill .html5::after,
+.wrapper .experience__info .info__experience .skills__description ul .skill .html5::after,
+.wrapper .experience__info .info__skills .skills__description ul .skill .html5::after,
+.wrapper .experience__info .info__language .skills__description ul .skill .html5::after {
+  width: 75%;
+}
+
+.wrapper .experience__info .info__education .skills__description ul .skill .css3::after,
+.wrapper .experience__info .info__experience .skills__description ul .skill .css3::after,
+.wrapper .experience__info .info__skills .skills__description ul .skill .css3::after,
+.wrapper .experience__info .info__language .skills__description ul .skill .css3::after {
+  width: 80%;
+}
+
+.wrapper .experience__info .info__education .skills__description ul .skill .sass::after,
+.wrapper .experience__info .info__experience .skills__description ul .skill .sass::after,
+.wrapper .experience__info .info__skills .skills__description ul .skill .sass::after,
+.wrapper .experience__info .info__language .skills__description ul .skill .sass::after {
+  width: 80%;
+}
+
+.wrapper .experience__info .info__education .skills__description ul .skill .git::after,
+.wrapper .experience__info .info__experience .skills__description ul .skill .git::after,
+.wrapper .experience__info .info__skills .skills__description ul .skill .git::after,
+.wrapper .experience__info .info__language .skills__description ul .skill .git::after {
+  width: 70%;
+}
+
+.wrapper .experience__info .info__education .skills__description ul .skill .webpack::after,
+.wrapper .experience__info .info__experience .skills__description ul .skill .webpack::after,
+.wrapper .experience__info .info__skills .skills__description ul .skill .webpack::after,
+.wrapper .experience__info .info__language .skills__description ul .skill .webpack::after {
+  width: 60%;
+}
+
+.wrapper .experience__info .info__education .skills__description ul .skill .vscode::after,
+.wrapper .experience__info .info__experience .skills__description ul .skill .vscode::after,
+.wrapper .experience__info .info__skills .skills__description ul .skill .vscode::after,
+.wrapper .experience__info .info__language .skills__description ul .skill .vscode::after {
+  width: 80%;
+}
+
+.wrapper .experience__info .info__education .skills__description ul:last-child,
+.wrapper .experience__info .info__experience .skills__description ul:last-child,
+.wrapper .experience__info .info__skills .skills__description ul:last-child,
+.wrapper .experience__info .info__language .skills__description ul:last-child {
+  margin-right: 0;
+}
+
+.wrapper .experience__info .info__education .language__description,
+.wrapper .experience__info .info__experience .language__description,
+.wrapper .experience__info .info__skills .language__description,
+.wrapper .experience__info .info__language .language__description {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 500px;
+  margin-left: 20px;
+  margin-bottom: 10px;
+  padding-left: 20px;
+  border-left: 1px solid #4b4b4b;
+}
+
+.wrapper .experience__info .info__education .language__description::before,
+.wrapper .experience__info .info__experience .language__description::before,
+.wrapper .experience__info .info__skills .language__description::before,
+.wrapper .experience__info .info__language .language__description::before {
+  position: absolute;
+  top: 0;
+  left: 0%;
+  width: 10px;
+  height: 10px;
+  content: '';
+  border-radius: 50%;
+  border: 1px solid #4b4b4b;
+  background-color: #f5f5f5;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.wrapper .experience__info .info__education .language__description ul,
+.wrapper .experience__info .info__experience .language__description ul,
+.wrapper .experience__info .info__skills .language__description ul,
+.wrapper .experience__info .info__language .language__description ul {
+  width: 175px;
+}
+
+.wrapper .experience__info .info__education .language__description ul .level,
+.wrapper .experience__info .info__experience .language__description ul .level,
+.wrapper .experience__info .info__skills .language__description ul .level,
+.wrapper .experience__info .info__language .language__description ul .level {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+}
+
+.wrapper .experience__info .info__education .language__description ul .level .lang,
+.wrapper .experience__info .info__experience .language__description ul .level .lang,
+.wrapper .experience__info .info__skills .language__description ul .level .lang,
+.wrapper .experience__info .info__language .language__description ul .level .lang {
+  font-size: 1rem;
+}
+
+.wrapper .experience__info .info__education .language__description ul .level .russian,
+.wrapper .experience__info .info__education .language__description ul .level .belarusian,
+.wrapper .experience__info .info__education .language__description ul .level .polish,
+.wrapper .experience__info .info__education .language__description ul .level .english,
+.wrapper .experience__info .info__experience .language__description ul .level .russian,
+.wrapper .experience__info .info__experience .language__description ul .level .belarusian,
+.wrapper .experience__info .info__experience .language__description ul .level .polish,
+.wrapper .experience__info .info__experience .language__description ul .level .english,
+.wrapper .experience__info .info__skills .language__description ul .level .russian,
+.wrapper .experience__info .info__skills .language__description ul .level .belarusian,
+.wrapper .experience__info .info__skills .language__description ul .level .polish,
+.wrapper .experience__info .info__skills .language__description ul .level .english,
+.wrapper .experience__info .info__language .language__description ul .level .russian,
+.wrapper .experience__info .info__language .language__description ul .level .belarusian,
+.wrapper .experience__info .info__language .language__description ul .level .polish,
+.wrapper .experience__info .info__language .language__description ul .level .english {
+  position: relative;
+  width: 50px;
+  height: 10px;
+  border-radius: 16px;
+  background-color: #939393;
+}
+
+.wrapper .experience__info .info__education .language__description ul .level .russian::after,
+.wrapper .experience__info .info__education .language__description ul .level .belarusian::after,
+.wrapper .experience__info .info__education .language__description ul .level .polish::after,
+.wrapper .experience__info .info__education .language__description ul .level .english::after,
+.wrapper .experience__info .info__experience .language__description ul .level .russian::after,
+.wrapper .experience__info .info__experience .language__description ul .level .belarusian::after,
+.wrapper .experience__info .info__experience .language__description ul .level .polish::after,
+.wrapper .experience__info .info__experience .language__description ul .level .english::after,
+.wrapper .experience__info .info__skills .language__description ul .level .russian::after,
+.wrapper .experience__info .info__skills .language__description ul .level .belarusian::after,
+.wrapper .experience__info .info__skills .language__description ul .level .polish::after,
+.wrapper .experience__info .info__skills .language__description ul .level .english::after,
+.wrapper .experience__info .info__language .language__description ul .level .russian::after,
+.wrapper .experience__info .info__language .language__description ul .level .belarusian::after,
+.wrapper .experience__info .info__language .language__description ul .level .polish::after,
+.wrapper .experience__info .info__language .language__description ul .level .english::after {
+  position: absolute;
+  top: 0;
+  left: 0%;
+  height: 100%;
+  content: '';
+  border-radius: 16px;
+  background-color: #5d5d5d;
+}
+
+.wrapper .experience__info .info__education .language__description ul .level .russian::after,
+.wrapper .experience__info .info__experience .language__description ul .level .russian::after,
+.wrapper .experience__info .info__skills .language__description ul .level .russian::after,
+.wrapper .experience__info .info__language .language__description ul .level .russian::after {
+  width: 100%;
+}
+
+.wrapper .experience__info .info__education .language__description ul .level .belarusian::after,
+.wrapper .experience__info .info__experience .language__description ul .level .belarusian::after,
+.wrapper .experience__info .info__skills .language__description ul .level .belarusian::after,
+.wrapper .experience__info .info__language .language__description ul .level .belarusian::after {
+  width: 100%;
+}
+
+.wrapper .experience__info .info__education .language__description ul .level .polish::after,
+.wrapper .experience__info .info__experience .language__description ul .level .polish::after,
+.wrapper .experience__info .info__skills .language__description ul .level .polish::after,
+.wrapper .experience__info .info__language .language__description ul .level .polish::after {
+  width: 75%;
+}
+
+.wrapper .experience__info .info__education .language__description ul .level .english::after,
+.wrapper .experience__info .info__experience .language__description ul .level .english::after,
+.wrapper .experience__info .info__skills .language__description ul .level .english::after,
+.wrapper .experience__info .info__language .language__description ul .level .english::after {
+  width: 50%;
+}
+
+.wrapper .experience__info .info__copyright {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  margin-top: 22px;
+  padding-top: 15px;
+}
+
+.wrapper .experience__info .info__copyright::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  content: '';
+  background-color: #4b4b4b;
+}
+
+.wrapper .experience__info .info__copyright .copyright__year,
+.wrapper .experience__info .info__copyright .copyright__school,
+.wrapper .experience__info .info__copyright .copyright__username {
+  font-size: 1.4rem;
+  color: #939393;
+}
+
+.wrapper .experience__info .info__copyright .copyright__year:hover:not(.copyright__year),
+.wrapper .experience__info .info__copyright .copyright__school:hover:not(.copyright__year),
+.wrapper .experience__info .info__copyright .copyright__username:hover:not(.copyright__year) {
+  color: #5d5d5d;
+}
+
+@media screen and (max-width: 600px) {
+  h2::after {
+    width: 78%;
+  }
+  .wrapper .experience__info .info__skills .skills__description {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 200px;
+  }
+  .wrapper .experience__info .info__language .language__description {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 200px;
+  }
+}
+
+@media screen and (max-width: 920px) {
+  .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .wrapper .navigation__menu {
+    z-index: 7;
+    top: 0;
+    left: 100%;
+    position: fixed;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: #000000;
+    opacity: 0.95;
+    -webkit-transition: all 0.25s;
+    transition: all 0.25s;
+  }
+  .wrapper .navigation__menu ul {
+    margin-top: 100px;
+  }
+  .wrapper .navigation__menu ul li {
+    margin-bottom: 15px;
+  }
+  .wrapper .navigation__menu ul li:last-child {
+    margin-top: 30px;
+  }
+  .wrapper .navigation__menu ul li a {
+    font-size: 2rem;
+    letter-spacing: 1.5px;
+  }
+  .wrapper .burger__menu {
+    z-index: 9;
+    display: block;
+    position: fixed;
+    right: 30px;
+    top: 30px;
+  }
+  .wrapper .burger__menu .menu__burger {
+    display: block;
+    width: 40px;
+    height: 21px;
+    cursor: pointer;
+  }
+  .wrapper .burger__menu .menu__burger:hover .burger__line {
+    background-color: #ffffff;
+  }
+  .wrapper .burger__menu .menu__burger .burger__line {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 3px;
+    border-radius: 3px;
+    background-color: #cccccc;
+    -webkit-box-shadow: 2px 2px 2px #4b4b4b;
+            box-shadow: 2px 2px 2px #4b4b4b;
+  }
+  .wrapper .burger__menu .menu__burger .line--top {
+    top: 0;
+    right: 0;
+  }
+  .wrapper .burger__menu .menu__burger .line--middle {
+    top: 10px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    opacity: 1;
+  }
+  .wrapper .burger__menu .menu__burger .line--bottom {
+    bottom: 0;
+    right: 0;
+    width: 80%;
+  }
+  .wrapper .burger__menu .menu__burger .burger__switcher {
+    display: none;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+  }
+  .wrapper .burger__menu .menu__burger .burger__switcher:checked ~ .line--top {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+    -webkit-transform-origin: 18%;
+            transform-origin: 18%;
+  }
+  .wrapper .burger__menu .menu__burger .burger__switcher:checked ~ .line--middle {
+    -webkit-transform: translateY(-50%) translateX(-100%);
+            transform: translateY(-50%) translateX(-100%);
+    opacity: 0;
+    -webkit-transition: all 0.25s;
+    transition: all 0.25s;
+  }
+  .wrapper .burger__menu .menu__burger .burger__switcher:checked ~ .line--bottom {
+    width: 100%;
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    -webkit-transform-origin: 18%;
+            transform-origin: 18%;
+  }
+  .wrapper {
+    overflow: hidden;
+  }
+  .wrapper .experience__info {
+    padding-top: 15px;
+  }
+  .wrapper .experience__info .info__bio {
+    display: none;
+  }
+}
+/*# sourceMappingURL=style.css.map */
