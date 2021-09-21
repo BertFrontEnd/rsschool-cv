@@ -1,3 +1,5 @@
+alert('Postpone Cross-Check to a later date, please. Thank you!');
+
 const htmlDocument = document.querySelector('html');
 const burgerSwitcher = document.querySelector('.burger__switcher');
 const navigationDashboard = document.querySelector('.navigation__menu');
