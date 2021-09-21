@@ -103,6 +103,7 @@ a:hover {
 }
 
 .wrapper .contact__info::before {
+  z-index: -1;
   position: absolute;
   top: 0;
   left: 0;
@@ -117,6 +118,7 @@ a:hover {
 }
 
 .wrapper .contact__info::after {
+  z-index: -1;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -331,10 +333,10 @@ a:hover {
   width: 100%;
 }
 
-.wrapper .contact__info .info__self p {
-  margin: 0 0 5px 20px;
-  font-size: 1rem;
-  color: #ffffff;
+.wrapper .contact__info .info__self .self__introduction iframe {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
 }
 
 .wrapper .experience__info {

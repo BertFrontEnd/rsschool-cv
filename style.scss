@@ -88,6 +88,7 @@ a {
     background-color: #5e6464;
 
     &::before {
+      z-index: -1;
       position: absolute;
       top: 0;
       left: 0;
@@ -100,6 +101,7 @@ a {
     }
 
     &::after {
+      z-index: -1;
       position: absolute;
       bottom: 0;
       left: 0;
@@ -298,10 +300,12 @@ a {
     .info__self {
       width: 100%;
 
-      p {
-        margin: 0 0 5px 20px;
-        font-size: 1rem;
-        color: #ffffff;
+      .self__introduction {
+        iframe {
+          width: 100%;
+          height: auto;
+          border-radius: 4px;
+        }
       }
     }
   }
